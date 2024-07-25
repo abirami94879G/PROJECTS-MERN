@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one
+        {
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-name: anime;
+            animation-duration: 2s;
+            position: relative;
+           
+        }
+        @keyframes anime{
+            0%{background-color: aqua; left:20px;top: 20px;}
+            25%{background-color: green;left:500px;top: 20px;}
+            50%{background-color: rgb(12, 148, 233);left:500px;top: 500px;}
+             75%{background-color: rgb(194, 48, 165);left:20px;top: 500px;}
+             100%{background-color:chocolate;left: 20px;top: 20px;}
+             
+            }
+            #two
+            {
+                height: 150px;
+                width: 150px;               
+            }
+            #two{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+        #two:hover{
+            width: 300px;
+        }
+        #three
+        {
+            height: 100px; 
+            width: 100px;
+            background-color: blue;
+            transition-property: transform;
+            transition-duration: 5s;
+        }
+        #three:hover{
+            transform: rotate(360deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="one"></div><br>
+    <div id="two"></div><br>
+    <div id="three"></div><br>
+</body>
+</html>
