@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Styles</title>
+        <style>
+            h1{
+                color: blue;
+            }
+            @media print and (orientation: portrait){
+                h1{
+                    color: rgb(12, 11, 11);
+                }
+            }
+            @media print and (orientation: landscape){
+                h1{
+                    color: green;
+                }
+            }
+            @media screen and (max-width: 500px)
+            {
+                h1{
+                    color: rgb(9, 224, 170);
+                }
+            }
+            @media screen and (max-width: 300px)
+            {
+                h1{
+                    color: rgb(238, 11, 11);
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+       <div>
+            <h1>Hello</h1>
+       </div>    
+    </body>    
+</html>
